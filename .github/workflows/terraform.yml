@@ -59,7 +59,7 @@ jobs:
       
       - name: terraformApply 
         run: terraform apply --auto-approve
-         working-directory: ./Aks-Acr/Aks_cluster
+        working-directory: ./Aks-Acr/Aks_cluster
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
