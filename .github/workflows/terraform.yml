@@ -16,7 +16,7 @@ jobs:
 
   terraform-Init:
     runs-on: ubuntu-latest
-    needs: login   # ye job login ke baad chalega
+    needs: terraform   # ye job login ke baad chalega
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -33,6 +33,12 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: 1.8.5
+      - name: TerraformInit
+        run: terraform init
+      - name: terraformApply 
+        run: terraform apply --auto-approve
+      
+      
 
       - name: Terraform Init
         run: terraform init
