@@ -9,7 +9,6 @@ terraform {
     resource_group_name = "action_rg"
     storage_account_name = "actionstorage0033"
     container_name = "actionblob001"
-    use_oidc              = true
     key = "action.tfstate"
     
   }
