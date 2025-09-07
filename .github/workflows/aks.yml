@@ -7,7 +7,7 @@ permissions:
 jobs:
   azlogin: 
     runs-on: ubuntu-latest
-    environment: alok
+    env: main
     
     steps: 
     - name: Checkout code
