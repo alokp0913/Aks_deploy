@@ -1,12 +1,12 @@
 resource "azurerm_resource_group" "example" {
-  name     = "aksWala_RG"
+  name     = "pinkutinku00223"
   location = "West Europe"
 }
 
 resource "azurerm_kubernetes_cluster" "example" {
-  name                = "chomu-aks1"
-  location            = "aksWala_RG"
-  resource_group_name = "West Europe"
+  name                = "akspinkutinku00223"
+  location            = "West Europe"
+  resource_group_name = "pinkutinku00223"
   dns_prefix          = "exampleaks1"
 
   default_node_pool {
