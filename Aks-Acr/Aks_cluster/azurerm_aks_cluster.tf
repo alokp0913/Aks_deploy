@@ -6,16 +6,16 @@ resource "azurerm_resource_group" "example" {
 
 resource "azurerm_resource_group" "example1" {
   name     = "tinku00223"
-  location = "Korea Southe"
+  location = "japan east"
 }
 
 resource "azurerm_kubernetes_cluster" "example1" {
 depends_on = [azurerm_resource_group.example1]
 
-  name                = "akspinkutinku00223"
-  location            = "Korea Southe"
+  name                = "akstinku00223"
+  location            = "japan east"
   resource_group_name = "tinku00223"
-  dns_prefix          = "exampleaks1"
+  dns_prefix          = "aks8781"
 
   default_node_pool {
     name       = "default"
