@@ -1,16 +1,12 @@
 name: Aks Deploy Karna hoga
 on: workflow_dispatch
 
-branch:
-main
-
 permissions:
   contents: read
   id-token: write
 jobs:
   azlogin: 
     runs-on: ubuntu-latest
-    
     
     steps: 
     - name: Checkout code
