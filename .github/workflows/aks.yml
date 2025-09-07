@@ -34,4 +34,8 @@ jobs:
       run: terraform plan
       working-directory: Aks-Acr/Aks_cluster
 
+    - name: Terraform Apply
+      run: terraform apply --auto-approve
+      working-directory: Aks-Acr/Aks_cluster
+
 
