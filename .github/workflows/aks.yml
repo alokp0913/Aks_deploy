@@ -23,8 +23,6 @@ jobs:
     - name: Terraform Plan
       run: terraform plan
       working-directory: Aks-Acr/Aks_cluster
-      
-
   
     
   
