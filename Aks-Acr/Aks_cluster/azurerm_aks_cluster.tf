@@ -4,6 +4,8 @@ resource "azurerm_resource_group" "example" {
 }
 
 resource "azurerm_kubernetes_cluster" "example" {
+depends_on = [azurerm_resource_group.example]
+
   name                = "akspinkutinku00223"
   location            = "West Europe"
   resource_group_name = "pinkutinku00223"
