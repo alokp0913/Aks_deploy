@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "example" {
 
 
 resource "azurerm_resource_group" "example1" {
-  name     = tinku00223"
+  name     = "tinku00223"
   location = "Korea Southe"
 }
 
