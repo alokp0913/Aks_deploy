@@ -7,12 +7,14 @@ permissions:
 jobs:
   azlogin: 
     runs-on: ubuntu-latest
-    environment: test
+    environment: alok
+    
     steps: 
     - name: Checkout code
       uses: actions/checkout@v4
     - name: az-login
       uses: azure/login@v2.3.0
+    
       with:
         client-id: ${{secrets.AZURE_CLIENT_ID}}
         tenant-id: ${{secrets.AZURE_TENANT_ID}}
